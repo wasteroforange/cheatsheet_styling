@@ -1,0 +1,1 @@
+The goal was to collect the information about CSS selectors and their combinations.
