@@ -1,0 +1,43 @@
+/* Styles for types */
+body {
+    font-family: Georgia;
+    background-color:lavender;
+}
+h1 {
+    color: midnightblue;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+thead {
+    background-color: cornflowerblue;
+    color: white;
+}
+th {
+    border: solid 1px;
+    border-color: royalblue;
+    padding: 5px;
+}
+td {
+    border: solid 1px black;
+    background-color: palegoldenrod;
+    padding: 5px;
+    width: 400px;
+}
+
+/* Styles for classes */
+.paragraph-heading {
+    text-transform: capitalize;
+}
+.em {
+    font-weight: bold;
+}
+.code {
+    background-color:darkslategray;
+    font-family: monospace;
+    font-size: 15px;
+    color: palegoldenrod;
+}

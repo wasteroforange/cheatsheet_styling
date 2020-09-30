@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+      <title>CSS selectors</title> 
+      <link href="./styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body> 
+    <h1>CSS selectors</h1>
+    <div class="description">
+        <h2 class="paragraph-heading">What is a selector?</h2>
+    <p>
+        <span class="em">Selector</span> defines which CSS rule is to apply to which element. <br>
+        <span class="em">Note</span> that there is no way to choose a parent of 
+        the element or children of parents' neighbour.
+    </p>
+</div>
+
+    <div class="content">
+        <h2 class="paragraph-heading">Most used selectors</h2>
+        <p></p>
+    <table>
+        <thead>
+            <th scope="row">Selector</th>
+            <th scope="row">Description</th>
+            <th scope="row">Example</th>
+        </thead>
+        <tbody> 
+        <tr>
+            <td>Type selectors</td>
+            <td>This selector is used to match all elements of 
+                a given type or tag name.</td>
+            <td class="code"> h1 {<br>
+            color: red;<br>
+            }</td>
+        </tr>
+        <tr>
+            <td>Class selectors</td>
+            <td>These selectors are considered to be more specific compared to
+                type selectors. 
+                <br>For selecting elements having
+                heading as the value of the class attribute, 
+                a . needs to be prepended.
+            </td>
+            <td class="code">
+                .heading {<br>
+                    font-weight: bold; <br>
+                }
+            </td>
+        </tr>
+        <tr>
+            <td>ID selectors</td>
+            <td>ID selectors are most specific of all. 
+            <span class="em">Note</span> that ID can be used only once per project.
+            <br>For selecting the element having time as the value of the id attribute, a # needs to be prepended.</td>
+            <td class="code">#time { <br>
+            font-family: Arial;<br>    
+            }
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <h2 class="paragraph-heading"> Combining selectors</h2>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Explanation</th>
+            <th>Example</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chaining selectors</td>
+                <td>CSS selectors can be chained so that rule 
+                    sets apply only to elements that match all criteria. <br>
+                For example, here &lt;h1&gt; elements with .heading class will be teal.</td>
+                <td class="code">
+                    h1.heading {<br>
+                        color: teal;<br>
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>CSS descendant selector</td>
+                <td>The CSS descendant selector combinator is used
+                     to match elements that are descended from another matched selector. <br>
+                     They are denoted by a single space between each selector and the descended selector. <br>
+                    <span class="em">Note</span> that all matching elements are selected regardless of the nesting level in the HTML.</td>
+                <td class="code"> body p {<br>
+                text-align: center; <br>
+                background-color: blue; <br>
+                font-size: 10px;<br>
+                }</td>
+            </tr>
+            <tr>
+                <td>Groups of selectors</td>
+                <td>Multiple selectors can be matched to the same rule using comma. <br>
+                For example, here &lt;h1&gt, &lt;h2&gt and &lt;td&gt elements would be bold.</td>
+                <td class="code">h1, h2, td {<br>
+                font-weight: bold;<br>
+                }</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+  </body>
+</html>
